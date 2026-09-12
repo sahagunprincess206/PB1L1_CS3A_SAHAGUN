@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ang Unang Blockchain ni Haylily</title>
+    <link rel="stylesheet" href="css/sim.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Ang Unang Blockchain ni Haylily</h1>
+        <p class="subtitle">Add Blocks, Inspect Hashes, and
+            see how Tampering breaks The Chain
+        </p>
+      //controls and button
+        <section class="controls">
+            <input id="blockData" type="text"
+                 placeholder="Enter Block Data" />
+            <button id="addBlockBtn">Add Block</button>
+            <button id="validateBtn">Validate Chain</button>
+        </section>
+
+        <section>
+            <div id="chain" class="chain"></div>
+        </section>
+
+        <section class="status-wrap">
+            <h2>Chain Status</h2>
+            <div id="status" class="status valid">
+                <h3>Chain is Valid</h3>
+            </div>
+        </section>
+
+    </div>
+
+    <!--CloudFlare Crypto 4.20-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.2.0/crypto-js.min.js"></script>
+    <script src="js/sim.js"></script>
+</body>
+</html>
